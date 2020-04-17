@@ -1,0 +1,26 @@
+body{
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+header{
+  background: #232323;
+  padding-bottom: 100px;
+}
+.container{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.phone{
+	background: white;
+	display: flex;
+	flex-direction: column;
+}
+.phone h3{
+	padding: 10px 40px;
+}
+.phone p{
+	padding: 10px 40px;
+	color: gray;
+}

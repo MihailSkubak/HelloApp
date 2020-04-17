@@ -1,0 +1,134 @@
+body{
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+header{
+  background: #232323;
+}
+.container{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#burg a{
+  display: block;
+  width: 70px;
+}
+#burg{
+  width: 98%;
+  background: #232323;
+  padding: 7.5px 0 7.5px 2%;
+}
+span{
+  display: flex;
+  margin: 8px;
+  width: 30px;
+  height: 1px;
+  background: #C3C3C3;
+  z-index: 999;
+}
+.mobile-tab{
+  display: flex;
+  width: 100%;
+  background: #232323;
+  flex-direction: column;
+}
+.mobile-tab a{
+  font-size: 1.3em;
+  color: #C3C3C3;
+  text-decoration: none;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+.mobile-tab li{
+  list-style-type: none;
+  margin: 5% 5%;
+}
+.mobile-tab ul{
+  padding: 5% 0;
+}
+#desktop{
+  display: none;
+}
+.logo{
+  width: 75%;
+}
+.logo h2{
+  color: white;
+  font-size: 100px;
+  font-weight: lighter;
+  font-family: initial;
+}
+.invisible{
+  display: none;
+}
+@media screen and (min-width: 768px){
+  .mobile-tab,#burg,#mobile{
+      display: none;
+  }
+  .bar{
+    background: #232323;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .mobile-bar{
+    display: none;
+  }
+  #desktop{
+    display: flex;
+  }
+  .mobile-tab , .bar a{
+    text-decoration: none;
+    color: #C3C3C3;
+    margin: 0;
+  }
+  .mobile-tab , .bar ul{
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+ .mobile-tab , .bar li{
+    color: white;
+    cursor: pointer;
+    font-weight: lighter;
+    background: #232323;
+    padding: 20px 20px;
+    text-align: center;
+    width: 90px;
+    letter-spacing: 1px;
+    transition: all .2s ease-in-out;
+  }
+  .mobile-tab , .bar li:hover{
+    background: #fff;
+    opacity: .8;
+    box-shadow: inset 1px 1px 5px grey;
+  }
+  .mobile-tab , .bar li:hover a{
+    color: #2B2B2B;
+  }
+}
+
+footer{
+  background: #232323;
+  color: white;
+}
+.fot{
+  display: flex;
+  justify-content: space-around;
+}
+.fot_item ul{
+   list-style-type: none; 
+}
+.fot_heading{
+  font-size: 27px;
+}
+.fot_item h2{
+  color: #5a5655;
+   font-size: 100px;
+  font-weight: lighter;
+  font-family: initial;
+}

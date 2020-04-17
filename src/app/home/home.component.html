@@ -1,0 +1,47 @@
+<body>
+<header>
+      <div class="container">
+<div class="cour">
+  <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <img [src]="images[0]" alt="Random first slide">
+      <div class="carousel-caption">
+        <h3>Introducing</h3>
+        <p>Something hot......</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[1]" alt="Random second slide">
+      <div class="carousel-caption">
+        <h3>Introducing</h3>
+        <p>Something hot......</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+</div>
+</header>
+
+<section>
+	<div class="container">
+		<div class="Websites">
+	<div class="Websites_item">
+		<img class="wow bounceInLeft" data-wow-delay="0.2s" src="assets/img/slider/about1.jpg" alt="Phone">
+		<h2>Responsive<br>Websites</h2>
+	</div>
+	<div class="Websites_item">
+		<img class="wow bounceInLeft" data-wow-delay="0.2s" src="assets/img/slider/about2.jpg" alt="Phone">
+		<h2>Commerce<br>Websites</h2>
+	</div>
+	<div class="Websites_item">
+		<img class="wow bounceInRight" data-wow-delay="0.2s" src="assets/img/slider/about3.jpg" alt="Phone">
+		<h2>Daily blog<br>Websites</h2>
+	</div>
+	<div class="Websites_item">
+		<img class="wow bounceInRight" data-wow-delay="0.2s" src="assets/img/slider/about4.jpg" alt="Phone">
+		<h2>Search based<br>Websites</h2>
+	</div>
+</div>
+</div>
+</section>
+</body>

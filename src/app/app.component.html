@@ -1,0 +1,95 @@
+<body>
+<header>
+      <div class="container">
+        <div class="bar">
+          <div class="logo">
+              <h2 class="wow bounce" data-wow-delay="0.1s">Leo/-</h2>
+          </div>
+        <nav id="desktop">
+          <ul>
+            <li><a routerLink="">Home</a></li>
+            <li><a routerLink="/Products">Products</a></li>
+            <li><a routerLink="/Portfolio">Portfolio</a></li>
+            <li><a routerLink="/Contact">Contact</a></li>
+          </ul>
+        </nav>
+        </div>
+
+        <div id="burg">
+          <a (click)="toggle()">
+            <span class="bar" id="top"></span>
+            <span class="bar" id="middle"></span>
+            <span class="bar" id="bottom"></span>
+          </a>
+        </div>
+
+        <div class="mobile-tab" [ngClass]="{invisible: visibility}">
+        <nav id="mobile">
+          <ul>
+            <li><a routerLink="">Home</a></li>
+            <li><a routerLink="/Products">Products</a></li>
+            <li><a routerLink="/Portfolio">Portfolio</a></li>
+            <li><a routerLink="/Contact">Contact</a></li>
+          </ul>
+        </nav>
+        </div>
+
+      </div>
+</header>
+</body>
+<router-outlet></router-outlet>
+<body>
+<footer>
+  <div class="container">
+    <div class="fot">
+      <div class="fot_item">
+          <ul>
+            <li class="fot_heading">About us</li>
+            <li>About us</li>
+            <li>Why us</li>
+            <li>Customer Stories</li>
+            <li>Press Resources</li>
+            <li>Press Releases</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div class="fot_item">
+          <ul>
+            <li class="fot_heading">About us</li>
+            <li>About us</li>
+            <li>Why us</li>
+            <li>Customer Stories</li>
+            <li>Press Resources</li>
+            <li>Press Releases</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div class="fot_item">
+          <ul>
+            <li class="fot_heading">Testimoanials</li>
+            <li>Lorem Ipsum is simply dummy text of the printing and </li>
+            <li>typesetting industry. Lorem Ipsum has been the industr</li>
+            <li>standard dummy text ever since the 1500s,</li>
+            <li>when an unknown printer took a</li>
+            <li>Lorem Ipsum is simply</li>
+            <li>Owner, Lorem Ipsum</li>
+          </ul>
+        </div>
+        <div class="fot_item">
+          <h2>Leo/-</h2>
+          <p>@cssauthor.com</p>
+        </div>
+    </div>
+        
+  </div>
+</footer>
+</body>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+body{
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+header{
+  background: #232323;
+  padding-bottom: 100px;
+}
+.container{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.whychoose{
+	background: white;
+	display: flex;
+	justify-content: space-between;
+}
+.whychoose h3{
+	padding: 20px 0 20px 20px;
+}
+.choose ul {
+    list-style-image: url(/assets/img/slider/Shape15.jpg);
+}
+.whychoose li{
+	padding-bottom: 10px;
+}
+@media screen and (max-width: 768px){
+	.whychoose{
+	flex-direction: column;
+}
+}

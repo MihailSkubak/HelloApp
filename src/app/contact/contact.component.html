@@ -1,0 +1,44 @@
+<body>
+<header>
+<div class="container">
+<div class="contact_text">
+	<h1 class="wow lightSpeedIn" data-wow-delay="0.2s">Contact us</h1>
+	<form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+
+    <h5 *ngIf="success">Your form is valid!</h5>
+    <div class="contact_text_item">
+    	<p class="wow flipInX" data-wow-delay="0.2s"> Name:</p>
+    	<label>
+      <input type="text" formControlName="name">
+      <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
+        <div *ngIf="messageForm.controls.name.errors.required">Your name is required</div>
+      </div>
+    </label>
+    </div>
+    <div class="contact_text_item">
+    	<p class="wow flipInX" data-wow-delay="0.2s"> Message:</p>
+    	<label>
+      <textarea formControlName="message"></textarea>
+      <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
+        <div *ngIf="messageForm.controls.message.errors.required">A message is required</div>
+      </div>
+    </label>
+    </div>
+    <div class="contact_text_item">
+    	<input type="submit" value="Send message" class="but">
+    </div>
+  </form>
+
+  <div *ngIf="submitted" class="results">
+    <strong>Name:</strong> 
+    <span>{{ messageForm.controls.name.value }}</span>
+
+    <strong>Message:</strong> 
+    <span>{{ messageForm.controls.message.value }}</span>
+  </div>
+</div>
+
+
+</div>
+</header>
+</body>

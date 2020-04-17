@@ -1,0 +1,55 @@
+body{
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+header{
+  background: #232323;
+  padding-bottom: 100px;
+}
+.container{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.cour img{
+  width: 100%;
+  height: 507px;
+}
+.carousel-caption{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: blue;
+}
+.carousel-caption h3{
+  font-size: 80px;
+}
+.carousel-caption p{
+  font-size: 40px;
+}
+section{
+   background: #232323;
+   padding-bottom: 100px;
+}
+.Websites{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: white;
+	display: flex;
+	justify-content: space-around;
+}
+.Websites_item h2{
+	padding-top: 40px;
+	font-size: 18px;
+	text-align: center;
+	color: gray;
+}
+@media screen and (max-width: 768px){
+  .Websites{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+}
